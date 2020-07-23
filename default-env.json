@@ -1,0 +1,23 @@
+{   
+    "PORT": 5000,
+	"RECONNECTION_INTERVAL" : 30000,
+	"MAX_RECONNECT_COUNT"    : 10,
+	"VCAP_SERVICES" : {
+		"amqp": [{
+        	"credentials": {
+                "host" 		: "localhost",
+                "port" 		:  5672,
+				"protocol" 	: "amqp",
+				"mechanism"	: "PLAIN",
+				"user"      : "guest211",
+        		"password"  : "gues123t"
+			},
+			"label" : "amqp",
+			"name"  : "amqp-v100",
+			"tags"  : [
+				"amqp"
+			]
+        }]
+    }
+}
+
